@@ -1,44 +1,47 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to APNPost.h instead.
+// Make changes to ANCPost.h instead.
 
 #import <CoreData/CoreData.h>
 
 
 
-extern const struct APNPostAttributes {
+extern const struct ANCPostAttributes {
 	__unsafe_unretained NSString *creationDate;
+	__unsafe_unretained NSString *postId;
 	__unsafe_unretained NSString *postText;
-} APNPostAttributes;
+} ANCPostAttributes;
 
 
 
-extern const struct APNPostRelationships {
+extern const struct ANCPostRelationships {
 	__unsafe_unretained NSString *user;
-} APNPostRelationships;
+} ANCPostRelationships;
 
 
 
 
 
-extern const struct APNPostUserInfo {
-} APNPostUserInfo;
+extern const struct ANCPostUserInfo {
+} ANCPostUserInfo;
 
 
-@class APNUser;
-
-
-
+@class ANCUser;
 
 
 
-@interface APNPostID : NSManagedObjectID {}
+
+
+
+
+
+@interface ANCPostID : NSManagedObjectID {}
 @end
 
-@interface _APNPost : NSManagedObject {}
+@interface _ANCPost : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-@property (nonatomic, readonly, strong) APNPostID* objectID;
+@property (nonatomic, readonly, strong) ANCPostID* objectID;
 
 
 
@@ -54,6 +57,16 @@ extern const struct APNPostUserInfo {
 
 
 
+@property (nonatomic, strong) NSString* postId;
+
+
+
+//- (BOOL)validatePostId:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* postText;
 
 
@@ -64,7 +77,7 @@ extern const struct APNPostUserInfo {
 
 
 
-@property (nonatomic, strong) APNUser *user;
+@property (nonatomic, strong) ANCUser *user;
 
 //- (BOOL)validateUser:(id*)value_ error:(NSError**)error_;
 
@@ -76,12 +89,12 @@ extern const struct APNPostUserInfo {
 
 
 
-@interface _APNPost (CoreDataGeneratedPrimitiveAccessors)
+@interface _ANCPost (CoreDataGeneratedPrimitiveAccessors)
 
 
 
-- (APNUser*)primitiveUser;
-- (void)setPrimitiveUser:(APNUser*)value;
+- (ANCUser*)primitiveUser;
+- (void)setPrimitiveUser:(ANCUser*)value;
 
 
 @end

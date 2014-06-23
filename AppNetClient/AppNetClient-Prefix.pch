@@ -13,4 +13,14 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#import "_ANCPost.h"
+#import "_ANCUser.h"
+#import "ANCPost.h"
+#import "ANCUser.h"
+
+#import "NSDictionary+DataAdditions.h"
+#import "NSManagedObjectAdditions.h"
+#import "NSManagedObjectContextAdditions.h"
+
 #endif

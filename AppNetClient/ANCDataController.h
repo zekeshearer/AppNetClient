@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^ANCPostsCompletion)(BOOL success, NSError *error);
+
 @interface ANCDataController : NSObject
+
++ (ANCDataController *)instance;
+- (void)fetchPostsWithCompletion:(ANCPostsCompletion)completion;
+- (NSArray *)existingPosts;
 
 @end

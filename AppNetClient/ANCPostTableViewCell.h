@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *ANCPostTableViewCellIdentifier;
+
 @interface ANCPostTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) ANCPost *post;
 
 @end

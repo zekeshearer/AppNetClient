@@ -1,17 +1,18 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to APNUser.m instead.
+// Make changes to ANCUser.m instead.
 
-#import "_APNUser.h"
+#import "_ANCUser.h"
 
 
-const struct APNUserAttributes APNUserAttributes = {
+const struct ANCUserAttributes ANCUserAttributes = {
 	.avatarUrl = @"avatarUrl",
+	.userId = @"userId",
 	.userName = @"userName",
 };
 
 
 
-const struct APNUserRelationships APNUserRelationships = {
+const struct ANCUserRelationships ANCUserRelationships = {
 	.posts = @"posts",
 };
 
@@ -19,14 +20,14 @@ const struct APNUserRelationships APNUserRelationships = {
 
 
 
-const struct APNUserUserInfo APNUserUserInfo = {
+const struct ANCUserUserInfo ANCUserUserInfo = {
 };
 
 
-@implementation APNUserID
+@implementation ANCUserID
 @end
 
-@implementation _APNUser
+@implementation _ANCUser
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
@@ -42,8 +43,8 @@ const struct APNUserUserInfo APNUserUserInfo = {
 	return [NSEntityDescription entityForName:@"User" inManagedObjectContext:moc_];
 }
 
-- (APNUserID*)objectID {
-	return (APNUserID*)[super objectID];
+- (ANCUserID*)objectID {
+	return (ANCUserID*)[super objectID];
 }
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
@@ -57,6 +58,13 @@ const struct APNUserUserInfo APNUserUserInfo = {
 
 
 @dynamic avatarUrl;
+
+
+
+
+
+
+@dynamic userId;
 
 
 

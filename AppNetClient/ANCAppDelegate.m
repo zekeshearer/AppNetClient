@@ -7,12 +7,19 @@
 //
 
 #import "ANCAppDelegate.h"
+#import "ANCHomeViewController.h"
 
 @implementation ANCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    ANCHomeViewController *homeViewController;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    homeViewController = [[ANCHomeViewController alloc] initWithNibName:@"ANCHomeViewController" bundle:nil];
+    self.window.rootViewController = homeViewController;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

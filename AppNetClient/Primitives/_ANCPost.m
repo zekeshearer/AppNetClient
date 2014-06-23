@@ -1,17 +1,18 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to APNPost.m instead.
+// Make changes to ANCPost.m instead.
 
-#import "_APNPost.h"
+#import "_ANCPost.h"
 
 
-const struct APNPostAttributes APNPostAttributes = {
+const struct ANCPostAttributes ANCPostAttributes = {
 	.creationDate = @"creationDate",
+	.postId = @"postId",
 	.postText = @"postText",
 };
 
 
 
-const struct APNPostRelationships APNPostRelationships = {
+const struct ANCPostRelationships ANCPostRelationships = {
 	.user = @"user",
 };
 
@@ -19,14 +20,14 @@ const struct APNPostRelationships APNPostRelationships = {
 
 
 
-const struct APNPostUserInfo APNPostUserInfo = {
+const struct ANCPostUserInfo ANCPostUserInfo = {
 };
 
 
-@implementation APNPostID
+@implementation ANCPostID
 @end
 
-@implementation _APNPost
+@implementation _ANCPost
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
@@ -42,8 +43,8 @@ const struct APNPostUserInfo APNPostUserInfo = {
 	return [NSEntityDescription entityForName:@"Post" inManagedObjectContext:moc_];
 }
 
-- (APNPostID*)objectID {
-	return (APNPostID*)[super objectID];
+- (ANCPostID*)objectID {
+	return (ANCPostID*)[super objectID];
 }
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
@@ -57,6 +58,13 @@ const struct APNPostUserInfo APNPostUserInfo = {
 
 
 @dynamic creationDate;
+
+
+
+
+
+
+@dynamic postId;
 
 
 

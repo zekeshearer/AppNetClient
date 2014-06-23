@@ -1,44 +1,47 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to APNUser.h instead.
+// Make changes to ANCUser.h instead.
 
 #import <CoreData/CoreData.h>
 
 
 
-extern const struct APNUserAttributes {
+extern const struct ANCUserAttributes {
 	__unsafe_unretained NSString *avatarUrl;
+	__unsafe_unretained NSString *userId;
 	__unsafe_unretained NSString *userName;
-} APNUserAttributes;
+} ANCUserAttributes;
 
 
 
-extern const struct APNUserRelationships {
+extern const struct ANCUserRelationships {
 	__unsafe_unretained NSString *posts;
-} APNUserRelationships;
+} ANCUserRelationships;
 
 
 
 
 
-extern const struct APNUserUserInfo {
-} APNUserUserInfo;
+extern const struct ANCUserUserInfo {
+} ANCUserUserInfo;
 
 
-@class APNPost;
-
-
-
+@class ANCPost;
 
 
 
-@interface APNUserID : NSManagedObjectID {}
+
+
+
+
+
+@interface ANCUserID : NSManagedObjectID {}
 @end
 
-@interface _APNUser : NSManagedObject {}
+@interface _ANCUser : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-@property (nonatomic, readonly, strong) APNUserID* objectID;
+@property (nonatomic, readonly, strong) ANCUserID* objectID;
 
 
 
@@ -49,6 +52,16 @@ extern const struct APNUserUserInfo {
 
 
 //- (BOOL)validateAvatarUrl:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSString* userId;
+
+
+
+//- (BOOL)validateUserId:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -75,15 +88,15 @@ extern const struct APNUserUserInfo {
 @end
 
 
-@interface _APNUser (PostsCoreDataGeneratedAccessors)
+@interface _ANCUser (PostsCoreDataGeneratedAccessors)
 - (void)addPosts:(NSSet*)value_;
 - (void)removePosts:(NSSet*)value_;
-- (void)addPostsObject:(APNPost*)value_;
-- (void)removePostsObject:(APNPost*)value_;
+- (void)addPostsObject:(ANCPost*)value_;
+- (void)removePostsObject:(ANCPost*)value_;
 @end
 
 
-@interface _APNUser (CoreDataGeneratedPrimitiveAccessors)
+@interface _ANCUser (CoreDataGeneratedPrimitiveAccessors)
 
 
 

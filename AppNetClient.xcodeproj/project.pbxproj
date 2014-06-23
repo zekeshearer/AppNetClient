@@ -21,15 +21,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B32789811958B864009577A4 /* _APNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B327897E1958B864009577A4 /* _APNPost.m */; };
-		B32789821958B864009577A4 /* _APNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789801958B864009577A4 /* _APNUser.m */; };
-		B32789871958B86D009577A4 /* APNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789841958B86D009577A4 /* APNPost.m */; };
-		B32789881958B86D009577A4 /* APNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789861958B86D009577A4 /* APNUser.m */; };
 		B327898E1958BA2D009577A4 /* ANCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B327898C1958BA2D009577A4 /* ANCHomeViewController.m */; };
 		B327898F1958BA2D009577A4 /* ANCHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B327898D1958BA2D009577A4 /* ANCHomeViewController.xib */; };
 		B32789941958BA88009577A4 /* ANCPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789921958BA88009577A4 /* ANCPostTableViewCell.m */; };
 		B32789951958BA88009577A4 /* ANCPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32789931958BA88009577A4 /* ANCPostTableViewCell.xib */; };
 		B32789981958BB2A009577A4 /* ANCDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789971958BB2A009577A4 /* ANCDataController.m */; };
+		B327899D1958C0A2009577A4 /* ANCModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B327899C1958C0A2009577A4 /* ANCModelController.m */; };
+		B327899F1958C0FD009577A4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B327899E1958C0FD009577A4 /* CoreData.framework */; };
+		B32789A21958C252009577A4 /* EZSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789A11958C252009577A4 /* EZSImageView.m */; };
+		B32789A51958C710009577A4 /* NSDictionary+DataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789A41958C710009577A4 /* NSDictionary+DataAdditions.m */; };
+		B32789AD1958CE93009577A4 /* NSManagedObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789AA1958CE93009577A4 /* NSManagedObjectAdditions.m */; };
+		B32789AE1958CE93009577A4 /* NSManagedObjectContextAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789AC1958CE93009577A4 /* NSManagedObjectContextAdditions.m */; };
+		B32789B31958CF86009577A4 /* _ANCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789B01958CF86009577A4 /* _ANCPost.m */; };
+		B32789B41958CF86009577A4 /* _ANCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789B21958CF86009577A4 /* _ANCUser.m */; };
+		B32789B91958CF8E009577A4 /* ANCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789B61958CF8E009577A4 /* ANCPost.m */; };
+		B32789BA1958CF8E009577A4 /* ANCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789B81958CF8E009577A4 /* ANCUser.m */; };
+		B32789BD1958D082009577A4 /* NSSortDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B32789BC1958D082009577A4 /* NSSortDescriptorAdditions.m */; };
 		B3E3E15D1958AD1500908247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E3E15C1958AD1500908247 /* Foundation.framework */; };
 		B3E3E15F1958AD1500908247 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E3E15E1958AD1500908247 /* CoreGraphics.framework */; };
 		B3E3E1611958AD1500908247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E3E1601958AD1500908247 /* UIKit.framework */; };
@@ -65,14 +72,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B327897D1958B864009577A4 /* _APNPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APNPost.h; sourceTree = "<group>"; };
-		B327897E1958B864009577A4 /* _APNPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APNPost.m; sourceTree = "<group>"; };
-		B327897F1958B864009577A4 /* _APNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APNUser.h; sourceTree = "<group>"; };
-		B32789801958B864009577A4 /* _APNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APNUser.m; sourceTree = "<group>"; };
-		B32789831958B86D009577A4 /* APNPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNPost.h; sourceTree = "<group>"; };
-		B32789841958B86D009577A4 /* APNPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNPost.m; sourceTree = "<group>"; };
-		B32789851958B86D009577A4 /* APNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNUser.h; sourceTree = "<group>"; };
-		B32789861958B86D009577A4 /* APNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNUser.m; sourceTree = "<group>"; };
 		B327898B1958BA2D009577A4 /* ANCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCHomeViewController.h; sourceTree = "<group>"; };
 		B327898C1958BA2D009577A4 /* ANCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCHomeViewController.m; sourceTree = "<group>"; };
 		B327898D1958BA2D009577A4 /* ANCHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANCHomeViewController.xib; sourceTree = "<group>"; };
@@ -81,6 +80,27 @@
 		B32789931958BA88009577A4 /* ANCPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANCPostTableViewCell.xib; sourceTree = "<group>"; };
 		B32789961958BB2A009577A4 /* ANCDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCDataController.h; sourceTree = "<group>"; };
 		B32789971958BB2A009577A4 /* ANCDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCDataController.m; sourceTree = "<group>"; };
+		B327899B1958C0A2009577A4 /* ANCModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCModelController.h; sourceTree = "<group>"; };
+		B327899C1958C0A2009577A4 /* ANCModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCModelController.m; sourceTree = "<group>"; };
+		B327899E1958C0FD009577A4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B32789A01958C252009577A4 /* EZSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZSImageView.h; sourceTree = "<group>"; };
+		B32789A11958C252009577A4 /* EZSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZSImageView.m; sourceTree = "<group>"; };
+		B32789A31958C710009577A4 /* NSDictionary+DataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DataAdditions.h"; sourceTree = "<group>"; };
+		B32789A41958C710009577A4 /* NSDictionary+DataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DataAdditions.m"; sourceTree = "<group>"; };
+		B32789A91958CE93009577A4 /* NSManagedObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectAdditions.h; sourceTree = "<group>"; };
+		B32789AA1958CE93009577A4 /* NSManagedObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectAdditions.m; sourceTree = "<group>"; };
+		B32789AB1958CE93009577A4 /* NSManagedObjectContextAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectContextAdditions.h; sourceTree = "<group>"; };
+		B32789AC1958CE93009577A4 /* NSManagedObjectContextAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectContextAdditions.m; sourceTree = "<group>"; };
+		B32789AF1958CF86009577A4 /* _ANCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANCPost.h; sourceTree = "<group>"; };
+		B32789B01958CF86009577A4 /* _ANCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ANCPost.m; sourceTree = "<group>"; };
+		B32789B11958CF86009577A4 /* _ANCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANCUser.h; sourceTree = "<group>"; };
+		B32789B21958CF86009577A4 /* _ANCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ANCUser.m; sourceTree = "<group>"; };
+		B32789B51958CF8E009577A4 /* ANCPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCPost.h; sourceTree = "<group>"; };
+		B32789B61958CF8E009577A4 /* ANCPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCPost.m; sourceTree = "<group>"; };
+		B32789B71958CF8E009577A4 /* ANCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCUser.h; sourceTree = "<group>"; };
+		B32789B81958CF8E009577A4 /* ANCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCUser.m; sourceTree = "<group>"; };
+		B32789BB1958D082009577A4 /* NSSortDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSortDescriptorAdditions.h; sourceTree = "<group>"; };
+		B32789BC1958D082009577A4 /* NSSortDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSortDescriptorAdditions.m; sourceTree = "<group>"; };
 		B3E3E1591958AD1500908247 /* AppNetClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNetClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E3E15C1958AD1500908247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3E3E15E1958AD1500908247 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B327899F1958C0FD009577A4 /* CoreData.framework in Frameworks */,
 				B3E3E15F1958AD1500908247 /* CoreGraphics.framework in Frameworks */,
 				B3E3E1611958AD1500908247 /* UIKit.framework in Frameworks */,
 				B3E3E15D1958AD1500908247 /* Foundation.framework in Frameworks */,
@@ -146,10 +167,10 @@
 		B327897C1958B864009577A4 /* Primitives */ = {
 			isa = PBXGroup;
 			children = (
-				B327897D1958B864009577A4 /* _APNPost.h */,
-				B327897E1958B864009577A4 /* _APNPost.m */,
-				B327897F1958B864009577A4 /* _APNUser.h */,
-				B32789801958B864009577A4 /* _APNUser.m */,
+				B32789AF1958CF86009577A4 /* _ANCPost.h */,
+				B32789B01958CF86009577A4 /* _ANCPost.m */,
+				B32789B11958CF86009577A4 /* _ANCUser.h */,
+				B32789B21958CF86009577A4 /* _ANCUser.m */,
 			);
 			path = Primitives;
 			sourceTree = "<group>";
@@ -163,6 +184,38 @@
 			);
 			name = Cells;
 			sourceTree = "<group>";
+		};
+		B327899A1958BE09009577A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B32789A01958C252009577A4 /* EZSImageView.h */,
+				B32789A11958C252009577A4 /* EZSImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B32789A61958C71E009577A4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B32789A31958C710009577A4 /* NSDictionary+DataAdditions.h */,
+				B32789A41958C710009577A4 /* NSDictionary+DataAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B32789A81958CE93009577A4 /* CoreDataAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				B32789BB1958D082009577A4 /* NSSortDescriptorAdditions.h */,
+				B32789BC1958D082009577A4 /* NSSortDescriptorAdditions.m */,
+				B32789A91958CE93009577A4 /* NSManagedObjectAdditions.h */,
+				B32789AA1958CE93009577A4 /* NSManagedObjectAdditions.m */,
+				B32789AB1958CE93009577A4 /* NSManagedObjectContextAdditions.h */,
+				B32789AC1958CE93009577A4 /* NSManagedObjectContextAdditions.m */,
+			);
+			name = CoreDataAdditions;
+			path = 3rdParty/CoreDataAdditions;
+			sourceTree = SOURCE_ROOT;
 		};
 		B3E3E1501958AD1500908247 = {
 			isa = PBXGroup;
@@ -186,6 +239,7 @@
 		B3E3E15B1958AD1500908247 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B327899E1958C0FD009577A4 /* CoreData.framework */,
 				B3E3E15C1958AD1500908247 /* Foundation.framework */,
 				B3E3E15E1958AD1500908247 /* CoreGraphics.framework */,
 				B3E3E1601958AD1500908247 /* UIKit.framework */,
@@ -197,6 +251,8 @@
 		B3E3E1621958AD1500908247 /* AppNetClient */ = {
 			isa = PBXGroup;
 			children = (
+				B32789A61958C71E009577A4 /* Categories */,
+				B327899A1958BE09009577A4 /* Views */,
 				B32789901958BA5E009577A4 /* Cells */,
 				B3E3E18C1958AE7D00908247 /* ViewControllers */,
 				B3E3E18B1958AE7100908247 /* Controllers */,
@@ -244,6 +300,8 @@
 				B3E3E16C1958AD1500908247 /* ANCAppDelegate.m */,
 				B32789961958BB2A009577A4 /* ANCDataController.h */,
 				B32789971958BB2A009577A4 /* ANCDataController.m */,
+				B327899B1958C0A2009577A4 /* ANCModelController.h */,
+				B327899C1958C0A2009577A4 /* ANCModelController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +319,7 @@
 		B3E3E18D1958AE8C00908247 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				B32789A81958CE93009577A4 /* CoreDataAdditions */,
 				B3E3E18F1958AF0500908247 /* AFNetworking */,
 			);
 			name = 3rdParty;
@@ -269,10 +328,10 @@
 		B3E3E18E1958AE9E00908247 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B32789831958B86D009577A4 /* APNPost.h */,
-				B32789841958B86D009577A4 /* APNPost.m */,
-				B32789851958B86D009577A4 /* APNUser.h */,
-				B32789861958B86D009577A4 /* APNUser.m */,
+				B32789B51958CF8E009577A4 /* ANCPost.h */,
+				B32789B61958CF8E009577A4 /* ANCPost.m */,
+				B32789B71958CF8E009577A4 /* ANCUser.h */,
+				B32789B81958CF8E009577A4 /* ANCUser.m */,
 				B327897C1958B864009577A4 /* Primitives */,
 				B3E3E1AC1958AF4900908247 /* AppNetClient.xcdatamodeld */,
 			);
@@ -421,25 +480,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32789B31958CF86009577A4 /* _ANCPost.m in Sources */,
 				B3E3E1A91958AF0500908247 /* AFURLRequestSerialization.m in Sources */,
-				B32789871958B86D009577A4 /* APNPost.m in Sources */,
-				B32789881958B86D009577A4 /* APNUser.m in Sources */,
 				B3E3E1A81958AF0500908247 /* AFURLConnectionOperation.m in Sources */,
 				B3E3E1A71958AF0500908247 /* AFSecurityPolicy.m in Sources */,
 				B327898E1958BA2D009577A4 /* ANCHomeViewController.m in Sources */,
+				B32789B91958CF8E009577A4 /* ANCPost.m in Sources */,
 				B3E3E1A31958AF0500908247 /* AFHTTPRequestOperation.m in Sources */,
+				B32789A21958C252009577A4 /* EZSImageView.m in Sources */,
+				B32789BD1958D082009577A4 /* NSSortDescriptorAdditions.m in Sources */,
 				B3E3E1AE1958AF4900908247 /* AppNetClient.xcdatamodeld in Sources */,
 				B3E3E1AB1958AF0500908247 /* AFURLSessionManager.m in Sources */,
+				B32789A51958C710009577A4 /* NSDictionary+DataAdditions.m in Sources */,
 				B3E3E1AA1958AF0500908247 /* AFURLResponseSerialization.m in Sources */,
 				B32789941958BA88009577A4 /* ANCPostTableViewCell.m in Sources */,
 				B3E3E1691958AD1500908247 /* main.m in Sources */,
 				B3E3E1A51958AF0500908247 /* AFHTTPSessionManager.m in Sources */,
+				B32789BA1958CF8E009577A4 /* ANCUser.m in Sources */,
 				B3E3E1A41958AF0500908247 /* AFHTTPRequestOperationManager.m in Sources */,
-				B32789811958B864009577A4 /* _APNPost.m in Sources */,
 				B3E3E1A61958AF0500908247 /* AFNetworkReachabilityManager.m in Sources */,
-				B32789821958B864009577A4 /* _APNUser.m in Sources */,
+				B32789AD1958CE93009577A4 /* NSManagedObjectAdditions.m in Sources */,
 				B32789981958BB2A009577A4 /* ANCDataController.m in Sources */,
+				B327899D1958C0A2009577A4 /* ANCModelController.m in Sources */,
 				B3E3E16D1958AD1500908247 /* ANCAppDelegate.m in Sources */,
+				B32789AE1958CE93009577A4 /* NSManagedObjectContextAdditions.m in Sources */,
+				B32789B41958CF86009577A4 /* _ANCUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
