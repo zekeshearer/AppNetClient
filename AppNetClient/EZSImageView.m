@@ -96,22 +96,23 @@
     request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
     request.HTTPShouldUsePipelining = YES;
     
-    
-    self.imageView.hidden = YES;
     self.imageView.frame = self.bounds;
     cachedImage = [[[self class] imageCache] cachedImageForRequest:request];
     if ( cachedImage ) {
-        self.image = cachedImage;
-        self.imageView.hidden = NO;
+        self.imageView.image = cachedImage;
         [self setNeedsLayout];
         return;
+    } else {
+        self.imageView.image = nil;
+        [self setNeedsLayout];
     }
     
     operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.imageView.image = [UIImage imageWithData:responseObject];
-        self.imageView.hidden = NO;
     } failure:nil];
+    
+    [self.operationQueue cancelAllOperations];
     [self.operationQueue addOperation:operation];
     
 }

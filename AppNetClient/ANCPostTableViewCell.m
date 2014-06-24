@@ -43,7 +43,7 @@ NSString *ANCPostTableViewCellIdentifier = @"ANCPostTableViewCellIdentifier";
 
 - (void)prepareForReuse
 {
-    self.avatarImageView.imageView.image = nil;
+    [self.avatarImageView setImage:nil];
 }
 
 @end

@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UITableViewController *tableViewController;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UIView *innerLoadingView;
 
 @end
 
@@ -37,30 +39,57 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ANCPostTableViewCell" bundle:nil] forCellReuseIdentifier:ANCPostTableViewCellIdentifier];
     
-    self.posts = [[ANCDataController instance] existingPosts];
-    [self refreshData:nil];
-    
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refreshData:) forControlEvents:UIControlEventValueChanged];
     
     self.tableViewController = [[UITableViewController alloc] initWithStyle:self.tableView.style];
     self.tableViewController.tableView = self.tableView;
     self.tableViewController.refreshControl = self.refreshControl;
+    
+    self.posts = [[ANCDataController instance] existingPosts];
+    
+    if ( !self.posts.count ) {
+        [self showLoadingView];
+    }
+    
+    [self.tableView reloadData];
+    [self refreshData:nil];
+    
 }
 
 - (void)refreshData:(id)sender
 {
+    [self showLoadingView];
     [[ANCDataController instance] fetchPostsWithCompletion:^(BOOL success, NSError *error) {
-        if ( self.refreshControl.isRefreshing ) {
-            [self.refreshControl endRefreshing];
-        }
-        
-        if ( error ) {
-            [[[UIAlertView alloc] initWithTitle:@"Error Refreshing Posts" message:error.description delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-        } else {
-            self.posts = [[ANCDataController instance] existingPosts];
-            [self.tableView reloadData];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if ( error ) {
+                [[[UIAlertView alloc] initWithTitle:@"Error Refreshing Posts" message:error.description delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+            } else {
+                self.posts = [[ANCDataController instance] existingPosts];
+                [self.tableView reloadData];
+            }
+            if ( self.refreshControl.isRefreshing ) {
+                [self.refreshControl endRefreshing];
+            }
+            [self hideLoadingView];
+        });
+    }];
+}
+
+- (void)showLoadingView
+{
+    self.loadingView.frame = self.view.bounds;
+    self.innerLoadingView.layer.cornerRadius = 10;
+    [self.view addSubview:self.loadingView];
+}
+
+- (void)hideLoadingView
+{
+    [UIView animateWithDuration:.2 animations:^{
+        self.loadingView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self.loadingView removeFromSuperview];
+        self.loadingView = nil;
     }];
 }
 
@@ -90,7 +119,6 @@
     return 84 > size.height ? 84 : size.height;
     
     return size.height;
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -103,6 +131,13 @@
     cell = [tableView dequeueReusableCellWithIdentifier:ANCPostTableViewCellIdentifier];
     cell.post = post;
     return cell;
+}
+
+#pragma mark - Rotation Methods
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self.tableView reloadData];
 }
 
 @end
